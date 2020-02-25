@@ -7,7 +7,6 @@
 
 get_header(); ?>
 
-<h2>Inhabitent Front Page</h2>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
