@@ -7,12 +7,6 @@
 
 get_header(); ?>
 
-				<?php
-					if ( has_post_thumbnail() ) {
-						the_post_thumbnail();
-					}
-				?>			
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -22,12 +16,18 @@ get_header(); ?>
 
 			<?php the_post_navigation(); ?>
 
+				<?php if( get_field('product_image') ): ?>
+					<img src="<?php the_field('product_image'); ?>" />
+				<?php endif; ?>
+						
+
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
 				endif;
 			?>
+
 
 		<?php endwhile; // End of the loop. ?>
 

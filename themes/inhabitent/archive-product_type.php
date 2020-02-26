@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying products archives.
  *
  * @package Inhabitent_Theme
  */
@@ -24,11 +24,14 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
 
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 
+				<?php if( get_field('product_image') ): ?>
+					<img src="<?php the_field('product_image'); ?>" />
+				<?php endif; ?>
+
+	
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>

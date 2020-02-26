@@ -4,13 +4,22 @@
 
 /* Posts and pages */
 
-.content{
+//flex box 
+.site-content{
   flex-direction: row;
 }
 
+.widget-area{
+display: flex;
+order: 2;
+}
 
+.site-footer{
+  display: flex;
+  order:1; 
+}
 
-
+//
 
 .sticky {
   display: block;
