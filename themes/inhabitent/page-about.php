@@ -7,13 +7,13 @@
 
 get_header(); ?>
 
-				<?php
+
+			    <?php
 					if ( has_post_thumbnail() ) {
 						the_post_thumbnail();
 					}
 				?>
 			
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -21,20 +21,7 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?> 
-
-			
-			<?php
-   				$args = array( 'post_type' => 'journal', ‘numberposts’ => 3);
-   				$featured_posts = get_posts( $args ); 
-			?>
-			
-			<?php foreach ( $featured_posts as $post ) : setup_postdata( $post ); ?>
-
-				<h2> <?php the_title; ?></h2>
-				
-			<?php endforeach; wp_reset_postdata(); ?>
-
+			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
