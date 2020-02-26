@@ -96,14 +96,7 @@ function inhabitent_starter_scripts() {
 add_action( 'wp_enqueue_scripts', 'inhabitent_starter_scripts' );
 
 
-//Add feature image
-add_theme_support( 'post-thumbnails' ); 
-
-if ( has_post_thumbnail() ) {
-	the_post_thumbnail();
-} 
-the_content();
-
+	
 /**
  * Custom template tags for this theme.
  */
