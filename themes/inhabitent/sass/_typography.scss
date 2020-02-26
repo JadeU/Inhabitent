@@ -17,13 +17,17 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: 'Novecento Sans Web';
 }
 
-
+h3{
+	font-size: 2.1rem;
+}
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
+	font-family: 'Merriweather Web';
 }
 
 dfn, cite, em, i {

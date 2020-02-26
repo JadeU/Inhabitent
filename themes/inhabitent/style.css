@@ -289,11 +289,16 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: 'Novecento Sans Web'; }
+
+h3 {
+  font-size: 2.1rem; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-family: 'Merriweather Web'; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -624,6 +629,12 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
 .sticky {
   display: block; }
 

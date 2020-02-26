@@ -25,13 +25,15 @@ get_header(); ?>
 
 			
 			<?php
-   				$args = array( 'post_type' => 'journal', ‘numberposts’ => 3);
+   				$args = array(
+					   'numberposts' => 3
+					);
    				$featured_posts = get_posts( $args ); 
 			?>
 			
 			<?php foreach ( $featured_posts as $post ) : setup_postdata( $post ); ?>
 
-				<h2> <?php the_title; ?></h2>
+				<h2> <?php the_title();?></h2>
 				
 			<?php endforeach; wp_reset_postdata(); ?>
 
