@@ -33,12 +33,11 @@
 			</header><!-- #masthead -->
 
 			<?php 
-				if (is_front_page()) {
+				if (is_front_page() || is_page_about()) {
 				
 						if ( has_post_thumbnail() ) {
 							the_post_thumbnail();
 						}
-				
 				} 
 			?>
 
