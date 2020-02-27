@@ -4,22 +4,16 @@
 
 /* Posts and pages */
 
-//flex box 
-.site-content{
-  flex-direction: row;
-}
-
-.widget-area{
-display: flex;
-order: 2;
-}
-
-.site-footer{
+.site-content {
   display: flex;
-  order:1; 
+  flex-direction: row;
+  max-width: $site-width;
+  margin: 0 auto;
 }
 
-//
+.content-area {
+  flex: 2;
+}
 
 .sticky {
   display: block;

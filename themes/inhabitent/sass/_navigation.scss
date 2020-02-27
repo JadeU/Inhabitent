@@ -32,7 +32,7 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
+
   width: 100%;
 
   ul {
@@ -80,7 +80,6 @@ a {
     }
   }
   li {
-    float: left;
     position: relative;
 
     &:hover > a,
@@ -109,7 +108,8 @@ a {
     display: none;
   }
   .main-navigation ul {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 

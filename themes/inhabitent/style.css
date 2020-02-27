@@ -474,12 +474,12 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #248A83;
+  color: #248a83;
   font-family: 'Novecento Sans Web';
   font-size: 1.2rem;
   text-decoration: none; }
   a:visited {
-    color: #248A83; }
+    color: #248a83; }
   a:hover, a:focus, a:active {
     color: #2f1339; }
   a:focus {
@@ -491,7 +491,6 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -518,7 +517,6 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
     position: relative; }
   .main-navigation a {
     display: block;
@@ -533,7 +531,12 @@ a {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    display: block; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -630,26 +633,20 @@ a {
 --------------------------------------------------------------*/
 /* Posts and pages */
 .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  max-width: 1120px;
+  margin: 0 auto; }
 
-.widget-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2; }
-
-.site-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1; }
+.content-area {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2; }
 
 .sticky {
   display: block; }
@@ -672,7 +669,7 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem;
-  color: #248A83; }
+  color: #248a83; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -685,6 +682,17 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /*--------------------------------------------------------------
 # Media

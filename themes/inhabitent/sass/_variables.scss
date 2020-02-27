@@ -1,6 +1,7 @@
 // Structure
 
 $base__space-unit: 1.5rem;
+$site-width: 1120px;
 
 // Colors
 
@@ -22,27 +23,26 @@ $color__link-hover: midnightblue;
 // Typography
 
 $font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+$font__pre: 'Courier 10 Pitch', Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
-
-//Brand colours 
+//Brand colours
 
 $color__background-main: #ffffff;
-$color_green-brand-color: #248A83;
+$color_green-brand-color: #248a83;
 $color_purple-brand-color: #2f1339;
 $color_orange-brand-color: #d99054;
 $color_yellow-brand-color: #f0e4d1;
 $color_light-grey-brand-color: #a1a1a1;
 $color_medium-grey-brand-color: #808080;
 
-//Brand fonts 
+//Brand fonts
 
 $font__main: Merriweather;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+$font__pre: 'Courier 10 Pitch', Courier, monospace;
 $font__line-height-body: 1.75;
 $font__line-height-pre: 1.6;
 $font_base-color: #404040;

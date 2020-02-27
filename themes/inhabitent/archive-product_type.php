@@ -31,7 +31,7 @@ get_header(); ?>
 					<img src="<?php the_field('product_image'); ?>" />
 				<?php endif; ?>
 
-	
+				
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>

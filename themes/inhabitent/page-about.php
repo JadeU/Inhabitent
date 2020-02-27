@@ -8,11 +8,7 @@
 get_header(); ?>
 
 
-			    <?php
-					if ( has_post_thumbnail() ) {
-						the_post_thumbnail();
-					}
-				?>
+			   
 			
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
