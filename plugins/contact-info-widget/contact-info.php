@@ -6,16 +6,16 @@
  *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
- * @package   business-hours-widget
- * @author    Jade Underwood <jadeunderwood3@.com>
+ * @package   contact-info-widget
+ * @author    Jade Underwood <jadeunderwood3@gmail.com>
  * @license   GPL-2.0+
  * @link      http://example.com
- * @copyright 2020 Jade Underwood 
+ * @copyright 2020 Jade Underwood
  *
  * @wordpress-plugin
- * Plugin Name:       Business Hours Widget
+ * Plugin Name:       Contact Info Widget
  * Plugin URI:        http://github.com/jade
- * Description:       Plug in for displaying business hours
+ * Description:       Plug in for displaying business contact info
  * Version:           1.0.0
  * Author:            Jade
  * Author URI:        http://jade.me
@@ -29,7 +29,7 @@ if ( ! defined ( 'ABSPATH' ) ) {
 }
 
 // TODO: change 'Widget_Name' to the name of your plugin
-class Business_Hours_Widget extends WP_Widget {
+class Contact_Info_Widget extends WP_Widget {
 
     /**
      * @TODO - Rename "widget-name" to the name your your widget
@@ -40,7 +40,7 @@ class Business_Hours_Widget extends WP_Widget {
      *
      * @var      string
      */
-    protected $widget_slug = 'business-hours';
+    protected $widget_slug = 'contact-info';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -54,10 +54,10 @@ class Business_Hours_Widget extends WP_Widget {
 		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Business Hours',
+			'Contact Info',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Set the business hours for the store using this widget.'
+				'description' => 'Use this widget to display contact info for the store.'
 			)
 		);
 
@@ -98,9 +98,9 @@ class Business_Hours_Widget extends WP_Widget {
 
 		// Manipulate the widget's values based on their input fields
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
-		$weekdays = empty( $instance['weekdays'] ) ? '' : apply_filters( 'weekdays', $instance['weekdays'] );
-		$saturdays = empty( $instance['saturdays'] ) ? '' : apply_filters( 'saturdays', $instance['saturdays'] );
-		$sundays = empty( $instance['sundays'] ) ? '' : apply_filters( 'sundays', $instance['sundays'] );
+		$phone = empty( $instance['phone'] ) ? '' : apply_filters( 'phone', $instance['phone'] );
+		$email = empty( $instance['email'] ) ? '' : apply_filters( 'email', $instance['email'] );
+		$address = empty( $instance['address'] ) ? '' : apply_filters( 'address', $instance['address'] );
 		// TODO: other fields go here...
 
 		ob_start();
@@ -130,9 +130,9 @@ class Business_Hours_Widget extends WP_Widget {
 		$instance = $old_instance;
 
 		$instance['title'] = strip_tags( $new_instance['title'] );
-		$instance['weekdays'] = strip_tags( $new_instance['weekdays'] );
-		$instance['saturdays'] = strip_tags( $new_instance['saturdays'] );
-		$instance['sundays'] = strip_tags( $new_instance['sundays'] );
+		$instance['phone'] = strip_tags( $new_instance['phone'] );
+		$instance['email'] = strip_tags( $new_instance['email'] );
+		$instance['address'] = strip_tags( $new_instance['address'] );
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
@@ -150,18 +150,19 @@ class Business_Hours_Widget extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'title' => 'Business Hours',
-				'weekdays' => '',
-				'saturdays' => '',
-				'sundays' => '',
-
+	
+				'title' => 'Contact Info',
+				'phone' => '',
+				'email' => '',
+				'address' => '',
 			)
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$weekdays = strip_tags( $instance['weekdays'] );
-		$saturdays = strip_tags( $instance['saturdays'] );
-		$sundays = strip_tags( $instance['sundays'] );
+		$phone = strip_tags( $instance['phone'] );
+		$email = strip_tags( $instance['email'] );
+		$address = strip_tags( $instance['address'] );
+		
 		// TODO: Store the rest of values of the widget in their own variables
 
 		// Display the admin form
@@ -172,6 +173,6 @@ class Business_Hours_Widget extends WP_Widget {
 } // end class
 
 // TODO: Remember to change 'Widget_Name' to match the class name definition
-add_action( 'widgets_init', function(){
-     register_widget( 'Business_Hours_Widget' );
+add_action( '', function(){
+     register_widget( 'Contact_Info_Widget' );
 });
