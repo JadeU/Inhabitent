@@ -13,7 +13,7 @@
  * @copyright 2020 Jade Underwood
  *
  * @wordpress-plugin
- * Plugin Name:       Contact Info Widget
+ * Plugin Name:       Contact Info Widget1
  * Plugin URI:        http://github.com/jade
  * Description:       Plug in for displaying business contact info
  * Version:           1.0.0
@@ -40,7 +40,7 @@ class Contact_Info_Widget extends WP_Widget {
      *
      * @var      string
      */
-    protected $widget_slug = 'contact-info';
+    protected $widget_slug = 'contact-info-1';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -54,10 +54,10 @@ class Contact_Info_Widget extends WP_Widget {
 		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Contact Info',
+			'Contact info',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Use this widget to display contact info for the store.'
+				'description' => 'Short description of the widget goes here.'
 			)
 		);
 
@@ -173,6 +173,6 @@ class Contact_Info_Widget extends WP_Widget {
 } // end class
 
 // TODO: Remember to change 'Widget_Name' to match the class name definition
-add_action( '', function(){
+add_action( 'widgets_init', function(){
      register_widget( 'Contact_Info_Widget' );
 });

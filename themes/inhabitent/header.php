@@ -31,14 +31,16 @@
 				</nav><!-- #site-navigation -->
 
 			</header><!-- #masthead -->
+			<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php 
-				if (is_front_page() || is_page_about()) {
+				if (is_front_page() || is_page('about')) {
 				
 						if ( has_post_thumbnail() ) {
 							the_post_thumbnail();
 						}
 				} 
 			?>
+			<?php endwhile; // End of the loop. ?> 
 
 			<div id="content" class="site-content">
