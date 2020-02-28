@@ -12,7 +12,7 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 
 			<div class="footer-logo">
-				<a>
+				<a  href="http://localhost:3000/Inhabitent/">
 					<img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-text.svg"   alt="Inhabitent logo">
 				</a>
 			</div>	

@@ -19,8 +19,25 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
 
+	  <h2>
+		
+			<?php 
+				$terms = get_terms('product_taxonomy') & get_queried_object()->term_id;
+				
+ 				foreach ( $terms as $term ) {
+					echo '<a href="#">';
+					echo $term->slug.' ';
+					echo '</a>';
+				 
+				}
+
+
+ 			?>
+		</h2>
+		
+			</header><!-- .page-header -->
+			
 
 			<?php /* Start the Loop */ ?>
 			<section class="product-grid">

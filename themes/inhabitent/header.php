@@ -27,9 +27,10 @@
 				</div><!-- .site-branding -->
 
 			<div class="header-logo">
-				<a>
+				<a href="http://localhost:3000/Inhabitent/">
 					<img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-tent.svg"   alt="Inhabitent tent logo">
 				</a>
+
 			</div>	
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">

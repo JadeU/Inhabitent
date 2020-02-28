@@ -8,7 +8,6 @@
 get_header(); ?>
 
 
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -20,7 +19,6 @@ get_header(); ?>
 
 			
 
-
 			<?php
    				$args = array(
 					   'numberposts' => 3
@@ -28,12 +26,15 @@ get_header(); ?>
    				$featured_posts = get_posts( $args ); 
 			?>
 			
+		<section class = "featured-journal-posts">
 			<?php foreach ( $featured_posts as $post ) : setup_postdata( $post ); ?>
 
 				<h2> <?php the_title();?></h2>
 					<?php the_post_thumbnail();?> 
-				
+				<a class="read-more-btn" href="">Read Entry</a>
 			<?php endforeach; wp_reset_postdata(); ?>
+		</section>
+			
 
 
 		</main><!-- #main -->
