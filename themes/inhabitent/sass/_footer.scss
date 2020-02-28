@@ -4,6 +4,15 @@
   background: url(../../images/dark-wood@2x.png);
   background-size: 512px; 
   height: 350px;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  color: #ffffff;
+}
+
+
+.footer-logo{
+    height: 70px;
 }
 
 .footer-copyright-text{
@@ -12,4 +21,5 @@
     font-size: 24px;
     font-style: normal;
 }
+
 

@@ -546,7 +546,8 @@ a
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end; } }
+            justify-content: flex-end;
+    text-decoration: none; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -775,7 +776,20 @@ object {
 .site-footer {
   background: url(../../images/dark-wood@2x.png);
   background-size: 512px;
-  height: 350px; }
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff; }
+
+.footer-logo {
+  height: 70px; }
 
 .footer-copyright-text {
   color: #ffffff;
