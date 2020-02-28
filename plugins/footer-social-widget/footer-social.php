@@ -6,16 +6,16 @@
  *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
- * @package   contact-info-widget
+ * @package   footer-social-widget
  * @author    Jade Underwood <jadeunderwood3@gmail.com>
  * @license   GPL-2.0+
  * @link      http://example.com
  * @copyright 2020 Jade Underwood
  *
  * @wordpress-plugin
- * Plugin Name:       Contact Info Widget1
+ * Plugin Name:       Footer Social Widget
  * Plugin URI:        http://github.com/jade
- * Description:       Plug in for displaying business contact info
+ * Description:       Plug in for displaying footer social info
  * Version:           1.0.0
  * Author:            Jade
  * Author URI:        http://jade.me
@@ -29,7 +29,7 @@ if ( ! defined ( 'ABSPATH' ) ) {
 }
 
 // TODO: change 'Widget_Name' to the name of your plugin
-class Contact_Info_Widget extends WP_Widget {
+class Footer_Social_Widget extends WP_Widget {
 
     /**
      * @TODO - Rename "widget-name" to the name your your widget
@@ -40,7 +40,7 @@ class Contact_Info_Widget extends WP_Widget {
      *
      * @var      string
      */
-    protected $widget_slug = 'contact-info';
+    protected $widget_slug = 'footer-social';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -54,10 +54,10 @@ class Contact_Info_Widget extends WP_Widget {
 		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Contact Info',
+			'Social Media',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Contact info for the store.'
+				'description' => 'Social media for the store.'
 			)
 		);
 
@@ -100,7 +100,7 @@ class Contact_Info_Widget extends WP_Widget {
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
 		$phone = empty( $instance['phone'] ) ? '' : apply_filters( 'phone', $instance['phone'] );
 		$email = empty( $instance['email'] ) ? '' : apply_filters( 'email', $instance['email'] );
-		$address = empty( $instance['address'] ) ? '' : apply_filters( 'address', $instance['address'] );
+		$social = empty( $instance['social'] ) ? '' : apply_filters( 'social', $instance['social'] );
 		// TODO: other fields go here...
 
 		ob_start();
@@ -132,7 +132,7 @@ class Contact_Info_Widget extends WP_Widget {
 		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['phone'] = strip_tags( $new_instance['phone'] );
 		$instance['email'] = strip_tags( $new_instance['email'] );
-		$instance['address'] = strip_tags( $new_instance['address'] );
+		$instance['social'] = strip_tags( $new_instance['social'] );
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
@@ -150,7 +150,6 @@ class Contact_Info_Widget extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-	
 				'title' => 'Contact Info',
 				'phone' => '',
 				'email' => '',
@@ -159,10 +158,6 @@ class Contact_Info_Widget extends WP_Widget {
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$phone = strip_tags( $instance['phone'] );
-		$email = strip_tags( $instance['email'] );
-		$address = strip_tags( $instance['address'] );
-		
 		// TODO: Store the rest of values of the widget in their own variables
 
 		// Display the admin form
@@ -174,5 +169,5 @@ class Contact_Info_Widget extends WP_Widget {
 
 // TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
-     register_widget( 'Contact_Info_Widget' );
+     register_widget( 'Footer_Social_Widget' );
 });

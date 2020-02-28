@@ -18,10 +18,7 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?> 
 
-			<section class="front-page-hero">
-				<img src = "themes/inhabitent/images/inhabitent-logo-full.svg" class = "logo">
-			</section>
-
+			
 
 
 			<?php
@@ -34,6 +31,7 @@ get_header(); ?>
 			<?php foreach ( $featured_posts as $post ) : setup_postdata( $post ); ?>
 
 				<h2> <?php the_title();?></h2>
+					<?php the_post_thumbnail();?> 
 				
 			<?php endforeach; wp_reset_postdata(); ?>
 
@@ -41,5 +39,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
+

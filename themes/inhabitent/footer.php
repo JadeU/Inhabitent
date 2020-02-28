@@ -17,18 +17,35 @@
 				</a>
 			</div>	
 
-			<div class="social-icons">
-   				<div class="facbook-logo"><i class="fab fa-facebook-square"></i></div>
-   				<div class="twitter-logo"><i class="fab fa-twitter-square"></i></div>
-  				<div type="google-logo"><i class="fab fa-google-plus-square"></i></div>
-			</div> 
+			<div class="flex-footer">
+					<div class="footer-contents">
+						<div class="footer-social">
+							<h3>Contact Info</h3>
+							<ul>
+								<li>
+									<i class="fas fa-envelope"></i>
+									<a href="mailto:info@inhabitent.com">
+									info@inhabitent.com
+									</a>
+								</li>
+								<li>
+									<i class="fas fa-phone-alt"></i>
+									<a href="tel:778-456-7891">778-456-7891</a>
+								</li>
+								<li>
+									<i class="fab fa-facebook-square"></i>
+									<i class="fab fa-twitter-square"></i>
+									<i class="fab fa-google-plus-square"></i>
+								</li>
+							</ul>
+						</div>
 
 				<div class="site-info">
 					<p class= "footer-copyright-text">&copy; Copyright Inhabitent 2020 </p>
-				</div><!-- .site-info -->
+				</div>
 
-			</footer><!-- #colophon -->
-		</div><!-- #page -->
+			</footer>
+		</div>
 
 		<?php wp_footer(); ?>
 

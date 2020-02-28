@@ -2,24 +2,26 @@
 
 .site-footer {
   background: url(../../images/dark-wood@2x.png);
-  background-size: 512px; 
+  background-size: 512px;
   height: 350px;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: center;
   color: #ffffff;
 }
 
-
-.footer-logo{
-    height: 70px;
+.site-info {
+  font-size: 16px;
 }
 
-.footer-copyright-text{
-    color: #ffffff;
-    font-family: Novecento Sans Web;
-    font-size: 24px;
-    font-style: normal;
+.footer-logo {
+  height: 70px;
 }
 
-
+.footer-copyright-text {
+  color: $color__background-main;
+  font-family: Novecento Sans Web;
+  font-size: 24px;
+  font-style: normal;
+  text-transform: uppercase;
+}

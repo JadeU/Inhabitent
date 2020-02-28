@@ -200,7 +200,6 @@ input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -409,35 +408,13 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
   padding: 0.6rem 1rem 0.4rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type='button']:hover,
-  input[type='reset']:hover,
-  input[type='submit']:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type='button']:active,
-  input[type='button']:focus,
-  input[type='reset']:active,
-  input[type='reset']:focus,
-  input[type='submit']:active,
-  input[type='submit']:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 /* Fields */
 input[type='text'],
@@ -447,7 +424,6 @@ input[type='password'],
 input[type='search'],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
   border-radius: 3px; }
   input[type='text']:focus,
   input[type='email']:focus,
@@ -467,6 +443,10 @@ input[type='search'] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.search-field {
+  color: #248a83;
+  border: none; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -547,7 +527,7 @@ a
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    text-decoration: none; } }
+    list-style-type: none; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -788,6 +768,9 @@ object {
           align-items: center;
   color: #ffffff; }
 
+.site-info {
+  font-size: 16px; }
+
 .footer-logo {
   height: 70px; }
 
@@ -795,4 +778,17 @@ object {
   color: #ffffff;
   font-family: Novecento Sans Web;
   font-size: 24px;
-  font-style: normal; }
+  font-style: normal;
+  text-transform: uppercase; }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; }
+
+.product-image {
+  background-size: cover;
+  background-position: center, bottom center, center;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px; }

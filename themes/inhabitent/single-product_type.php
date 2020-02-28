@@ -16,9 +16,11 @@ get_header(); ?>
 
 			<?php the_post_navigation(); ?>
 
+			<div class="product-image-wrapper">
 				<?php if( get_field('product_image') ): ?>
-					<img src="<?php the_field('product_image'); ?>" />
+					<img width= "640" height= "360" src="<?php the_field('product_image'); ?>" />
 				<?php endif; ?>
+			</div>
 						
 
 			<?php

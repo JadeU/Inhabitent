@@ -9,7 +9,7 @@ a {
   font-family: 'Novecento Sans Web';
   font-size: 1.2rem;
   text-decoration: none;
-  
+
   &:visited {
     color: $color_green-brand-color;
   }
@@ -25,7 +25,8 @@ a {
   &:active {
     outline: 0;
   }
-}a
+}
+a
 
 /* Menus */
 
@@ -111,7 +112,7 @@ a {
   .main-navigation ul {
     display: flex;
     justify-content: flex-end;
-    text-decoration: none;
+    list-style-type: none;
   }
 }
 
