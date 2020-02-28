@@ -40,7 +40,7 @@ class Contact_Info_Widget extends WP_Widget {
      *
      * @var      string
      */
-    protected $widget_slug = 'contact-info-1';
+    protected $widget_slug = 'contact-info';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -54,7 +54,7 @@ class Contact_Info_Widget extends WP_Widget {
 		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Contact info',
+			'Contact Info',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
 				'description' => 'Short description of the widget goes here.'

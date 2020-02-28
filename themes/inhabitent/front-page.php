@@ -18,7 +18,12 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?> 
 
-			
+			<section class="front-page-hero">
+				<img src = "themes/inhabitent/images/inhabitent-logo-full.svg" class = "logo">
+			</section>
+
+
+
 			<?php
    				$args = array(
 					   'numberposts' => 3
