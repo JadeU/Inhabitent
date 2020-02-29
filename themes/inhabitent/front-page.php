@@ -28,14 +28,22 @@ get_header(); ?>
 			?>
 			<?php foreach ( $featured_posts as $post ) : setup_postdata( $post ); ?>
 
-			<div class="journal-container">
+			<div class="journal-container"> 
+
+	
+				<div class="journal-background" style="background-image: url('<?php echo get_the_post_thumbnail_url();?>')"></div>
+
+				<div class="journal-meta">
+				<?php inhabitent_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_starter_posted_by(); ?>
+
 				<h2> <?php the_title();?></h2>
-					<?php the_post_thumbnail();?> 
+					 
 				<a class="read-more-btn" href="">Read Entry</a>
+
+				</div>
 			</div>
+
 			<?php endforeach; wp_reset_postdata(); ?>
-
-
 
 
 			</div>
