@@ -62,6 +62,7 @@ get_header(); ?>
 							</div>
 
 							<div class="product-ellipsis">
+								.......
 							</div>
 
 							<div class = "price">
