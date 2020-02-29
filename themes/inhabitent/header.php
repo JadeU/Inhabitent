@@ -26,18 +26,23 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
-			<div class="header-logo">
-				<a href="http://localhost:3000/Inhabitent/">
-					<img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-tent.svg"   alt="Inhabitent tent logo">
-				</a>
+				<div class="header-container">
 
-			</div>	
+					<div class="header-logo">
+						<a href="http://localhost:3000/Inhabitent/">
+							<img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-tent.svg"   alt="Inhabitent tent logo">
+						</a>
+					</div>	
+					
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<?php get_search_form() ?>
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<?php get_search_form() ?>
+					</nav><!-- #site-navigation -->
+				</div>
+
 
 			</header><!-- #masthead -->
 			<?php while ( have_posts() ) : the_post(); ?>

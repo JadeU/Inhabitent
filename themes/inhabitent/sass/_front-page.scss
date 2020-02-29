@@ -5,3 +5,15 @@ read-more-btn {
   bottom: 0.75rem;
   left: 0.75rem;
 }
+
+.journal-post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: none;
+}
+
+
+h2 {
+  color: $color_green-brand-color;
+  font-size: 25px;
+}

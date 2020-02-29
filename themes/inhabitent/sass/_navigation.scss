@@ -109,10 +109,20 @@ a
   .menu-toggle {
     display: none;
   }
+  .main-navigation {
+    display: flex;
+    align-items: center;
+  }
+
   .main-navigation ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    margin: 0;
+
+    li {
+      margin: 0 1rem;
+    }
   }
 }
 

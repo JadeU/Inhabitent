@@ -520,6 +520,13 @@ a
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none; }
+  .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .main-navigation ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -527,7 +534,10 @@ a
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    list-style-type: none; } }
+    list-style-type: none;
+    margin: 0; }
+    .main-navigation ul li {
+      margin: 0 1rem; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -678,6 +688,19 @@ a
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px; }
+
+.header-container {
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -792,3 +815,19 @@ object {
   background-repeat: no-repeat;
   height: 250px;
   width: 250px; }
+
+read-more-btn {
+  border: 1px solid #000;
+  color: #000;
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem; }
+
+.journal-post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: none; }
+
+h2 {
+  color: #248a83;
+  font-size: 25px; }

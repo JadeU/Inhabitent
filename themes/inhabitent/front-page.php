@@ -17,7 +17,6 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?> 
 
-			
 
 			<?php
    				$args = array(
@@ -25,7 +24,8 @@ get_header(); ?>
 					);
    				$featured_posts = get_posts( $args ); 
 			?>
-			
+		
+	<div class = "journal-post-container">
 		<section class = "featured-journal-posts">
 			<?php foreach ( $featured_posts as $post ) : setup_postdata( $post ); ?>
 
@@ -34,7 +34,7 @@ get_header(); ?>
 				<a class="read-more-btn" href="">Read Entry</a>
 			<?php endforeach; wp_reset_postdata(); ?>
 		</section>
-			
+	</div>	
 
 
 		</main><!-- #main -->

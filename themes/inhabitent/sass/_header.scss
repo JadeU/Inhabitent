@@ -1,5 +1,13 @@
 .site-header {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.header-container {
+  width: 1120px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -7,5 +15,4 @@
 .header-logo {
   width: 40px;
   height: 40px;
-  }
-
+}
