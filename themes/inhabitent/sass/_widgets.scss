@@ -3,16 +3,27 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 0 $base__space-unit;
-	
+  margin: 0 0 $base__space-unit;
 
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
 }
 
 /* Search widget. */
 .widget_search .search-submit {
-	display: none;
+  display: none;
+}
+
+//Side-bar widget
+.widget-area {
+  flex: 1;
+  padding-left: 40px;
+  padding-top: 20px;
+  border-left: 1px solid #e1e1e1;
+}
+
+.widget-title {
+  margin: 0;
 }
