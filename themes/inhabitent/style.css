@@ -828,6 +828,16 @@ object {
   border-top-width: 6px;
   padding: 15px 24px; }
 
+.product-ellipsis {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden; }
+  .product-ellipsis::before {
+    position: absolute;
+    content: '.......................................'; }
+
 read-more-btn {
   border: 1px solid #000;
   color: #000;
