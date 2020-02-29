@@ -6,14 +6,25 @@ read-more-btn {
   left: 0.75rem;
 }
 
-.journal-post-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: none;
-}
-
-
 h2 {
   color: $color_green-brand-color;
   font-size: 25px;
+}
+
+.journal-title {
+  font-size: 36px;
+  color: $font_base-color;
+}
+
+.feature-container {
+  display: flex;
+}
+
+.journal-container {
+  flex: 1;
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

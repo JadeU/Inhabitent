@@ -11,12 +11,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			
+		
+	
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+		<section class = "featured-journal-posts">
+			<h2 class= "journal-title">INHABITENT JOURNAL</h2>
 
-			<?php endwhile; // End of the loop. ?> 
-
+			<div class="feature-container">
 
 			<?php
    				$args = array(
@@ -24,17 +26,21 @@ get_header(); ?>
 					);
    				$featured_posts = get_posts( $args ); 
 			?>
-		
-	<div class = "journal-post-container">
-		<section class = "featured-journal-posts">
 			<?php foreach ( $featured_posts as $post ) : setup_postdata( $post ); ?>
 
+			<div class="journal-container">
 				<h2> <?php the_title();?></h2>
 					<?php the_post_thumbnail();?> 
 				<a class="read-more-btn" href="">Read Entry</a>
+			</div>
 			<?php endforeach; wp_reset_postdata(); ?>
+
+
+
+
+			</div>
 		</section>
-	</div>	
+	
 
 
 		</main><!-- #main -->
