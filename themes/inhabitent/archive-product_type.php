@@ -41,25 +41,42 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<section class="product-grid">
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-
-			<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+					<div class="product-container">
 				
-				<div class = "product-image">
-					<?php if( get_field('product_image') ): ?>
-						<img src="<?php the_field('product_image'); ?> " />
-					<?php endif; ?>
-				</div>
+						<a href="<?php the_permalink(); ?>">
+							<?php if( get_field('product_image') ): ?>
+								<div class = "product-image" style="background-image: url(<?php the_field('product_image'); ?>)">
+									
+									<!-- <img src=" " /> -->
+									
+								</div>
+							<?php endif; ?>
+						</a>		
 
-				<div class = "price">
-					<?php if( get_field('price') ): ?>
-						<p><?php the_field('price'); ?></p>
-					<?php endif; ?>
-				</div>
-			</a>		
-			<?php endwhile; ?>
+						<div class="product-meta">
+	
+							<div class="product-name"> 	
+								<?php the_title(); ?>
+							</div>
+
+							<div class="product-ellipsis">
+							</div>
+
+							<div class = "price">
+								<?php if( get_field('price') ): ?>
+									<?php the_field('price'); ?>
+								<?php endif; ?>
+							</div>
+
+						</div>
+
+					</div>
+				
+				<?php endwhile; ?>
 			</section>
+
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
