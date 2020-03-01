@@ -1,3 +1,29 @@
+
+.shop-stuff-container {
+    flex: 1;
+    margin-right: 16px;
+  }
+  
+
+
+read-more-btn {
+    border: 1px solid #000;
+    color: #000;
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+  }
+  read-more-btn:hover{
+    background: $color_green-brand-color;
+}
+
+
+
+
+
+
+
+
 read-more-btn {
   border: 1px solid #000;
   color: #000;

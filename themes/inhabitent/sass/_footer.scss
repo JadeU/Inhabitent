@@ -22,19 +22,14 @@
   margin: 0;
   font-size: 20px;
   text-transform: uppercase;
+  color: $color_orange-brand-color;
 }
 
-.list-item{
-  
+.footer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
-
-.footer-list{
- list-style: none;
- margin: 0;
- padding: 0;
-}
-
 
 .footer-logo {
   height: 70px;

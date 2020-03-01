@@ -3,6 +3,9 @@
   justify-content: center;
   align-items: center;
   height: 50px;
+  position: fixed;
+  z-index: 3;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .header-container {

@@ -708,7 +708,10 @@ a
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px; }
+  height: 50px;
+  position: fixed;
+  z-index: 3;
+  border-bottom: 1px solid #e1e1e1; }
 
 .header-container {
   width: 1120px;
@@ -812,7 +815,8 @@ object {
 .contact-info {
   margin: 0;
   font-size: 20px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #d99054; }
 
 .footer-list {
   list-style: none;
@@ -871,6 +875,22 @@ object {
   .product-ellipsis::before {
     position: absolute;
     content: '.......................................'; }
+
+.shop-stuff-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 16px; }
+
+read-more-btn {
+  border: 1px solid #000;
+  color: #000;
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem; }
+
+read-more-btn:hover {
+  background: #248a83; }
 
 read-more-btn {
   border: 1px solid #000;

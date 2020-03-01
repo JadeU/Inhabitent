@@ -11,9 +11,21 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			
-		
-	
+		<section class="shop-stuff-container"> 
+		  <h2 class= "journal-title">SHOP STUFF</h2>
+			<div class="do-logo">
+
+						<a  href="http://localhost:3000/Inhabitent/">
+								<img src="<?php echo get_template_directory_uri();?>/images/do.svg"   alt="Do category logo">
+						</a>
+			</div>	
+
+			<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+				
+		   <a class="read-more-btn" href="http://localhost:3000/Inhabitent/">Do Stuff</a>
+		   
+</section>
+
 
 		<section class = "featured-journal-posts">
 			<h2 class= "journal-title">INHABITENT JOURNAL</h2>
@@ -28,9 +40,9 @@ get_header(); ?>
 			?>
 			<?php foreach ( $featured_posts as $post ) : setup_postdata( $post ); ?>
 
+	
 			<div class="journal-container"> 
 
-	
 				<div class="journal-background" style="background-image: url('<?php echo get_the_post_thumbnail_url();?>')"></div>
 
 				<div class="journal-meta">
