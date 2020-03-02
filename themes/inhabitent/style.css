@@ -301,7 +301,7 @@ h1 {
   border: 1px solid #248a83;
   background-color: #248a83; }
 
-h2 {
+h2 .widget-title {
   font-size: 1.3rem;
   color: #d99054; }
 
@@ -834,7 +834,7 @@ object {
   font-size: 16px;
   text-align: center; }
 
-.contact-info {
+.footer-title {
   margin: 0;
   font-size: 20px;
   text-transform: uppercase;

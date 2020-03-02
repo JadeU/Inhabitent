@@ -32,10 +32,10 @@ h1 {
 }
 
 h2 {
-
-  font-size: 1.3rem;
-  color: $color_orange-brand-color;
-  
+  .widget-title {
+    font-size: 1.3rem;
+    color: $color_orange-brand-color;
+  }
 }
 
 // h3{

@@ -16,7 +16,7 @@
 					<div class="footer-contents">
 						
 						<div class="footer-social">
-							<h3 class="contact-info">Contact Info</h3>
+							<h3 class="footer-title">Contact Info</h3>
 							<ul class="footer-list">
 								<li class="list-item">
 									<i class="fas fa-envelope"></i>
@@ -35,7 +35,17 @@
 								</li>
 							</ul>
 						</div>
-						<!--  end of footer-social-->
+
+						<div class="footer-hours">
+							<h3 class="footer-title">Business Hours</h3>
+								<p>Monday-Friday: 9am to 5pm</p>
+
+								<p>Saturday: 10am to 2pm</p>
+
+								<p>Sunday: Closed</p>
+
+							</div>
+						<!--  end of business hours-->
 						<div class="footer-logo">
 							<a  href="http://localhost:3000/Inhabitent/">
 								<img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-text.svg"   alt="Inhabitent logo">
