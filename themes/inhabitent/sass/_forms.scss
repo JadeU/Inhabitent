@@ -8,20 +8,13 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  border-radius: 3px;
-  background: #e6e6e6;
-
   @include font-size(0.75);
   line-height: 1;
-  padding: 0.6rem 1rem 0.4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  padding: 13px 28px;
+}
 
-  &:hover {
-  }
-
-  &:active,
-  &:focus {
-  }
+&:active,
+&:focus {
 }
 
 /* Fields */

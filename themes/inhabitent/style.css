@@ -287,9 +287,17 @@ textarea {
   line-height: 1.75; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both;
   font-family: 'Novecento Sans Web'; }
+
+h1 {
+  color: black; }
 
 h2 {
   font-size: 1.3rem; }
@@ -299,7 +307,10 @@ p {
   margin-bottom: 1.5rem;
   font-family: 'Merriweather Web'; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -319,16 +330,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -408,13 +424,16 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  border-radius: 3px;
-  background: #e6e6e6;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: 0.6rem 1rem 0.4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: 13px 28px;
+  border: 1px solid black; }
+  button:hover,
+  input[type='button']:hover,
+  input[type='reset']:hover,
+  input[type='submit']:hover {
+    background-color: #248a83; }
 
 /* Fields */
 input[type='text'],
@@ -881,16 +900,6 @@ object {
       -ms-flex: 1;
           flex: 1;
   margin-right: 16px; }
-
-read-more-btn {
-  border: 1px solid #000;
-  color: #000;
-  position: absolute;
-  bottom: 0.75rem;
-  left: 0.75rem; }
-
-read-more-btn:hover {
-  background: #248a83; }
 
 read-more-btn {
   border: 1px solid #000;

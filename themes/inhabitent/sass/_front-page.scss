@@ -1,24 +1,20 @@
-
 .shop-stuff-container {
-    flex: 1;
-    margin-right: 16px;
-  }
-  
-
-
-read-more-btn {
-    border: 1px solid #000;
-    color: #000;
-    position: absolute;
-    bottom: 0.75rem;
-    left: 0.75rem;
-  }
-  read-more-btn:hover{
-    background: $color_green-brand-color;
+  flex: 1;
+  margin-right: 16px;
 }
 
+.feature-container {
+  display: flex;
+}
 
+.journal-container {
+  flex: 1;
+  margin-right: 16px;
 
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
 
 
@@ -31,6 +27,12 @@ read-more-btn {
   bottom: 0.75rem;
   left: 0.75rem;
 }
+&:hover {
+  background-color: $color_green-brand-color;
+}
+// read-more-btn:hover {
+//   background-color: $color_green-brand-color;
+// }
 
 h2 {
   color: $color_green-brand-color;
@@ -70,7 +72,4 @@ h2 {
   padding: 16px;
 }
 
-.read-more-btn {
-  border: 1px solid black;
-  padding: 13px 28px;
-}
+

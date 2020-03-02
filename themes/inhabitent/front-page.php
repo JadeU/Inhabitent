@@ -13,15 +13,25 @@ get_header(); ?>
 
 		<section class="shop-stuff-container"> 
 		  <h2 class= "journal-title">SHOP STUFF</h2>
-			<div class="do-logo">
+			<div class="do-category">
 
 						<a  href="http://localhost:3000/Inhabitent/">
 								<img src="<?php echo get_template_directory_uri();?>/images/do.svg"   alt="Do category logo">
 						</a>
 			</div>	
 
-			<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+			
 				
+
+
+
+
+
+
+
+
+
+
 		   <a class="read-more-btn" href="http://localhost:3000/Inhabitent/">Do Stuff</a>
 		   
 </section>

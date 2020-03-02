@@ -21,7 +21,13 @@ get_header(); ?>
 					<img width= "640" height= "360" src="<?php the_field('product_image'); ?>" />
 				<?php endif; ?>
 			</div>
-						
+					
+			
+			<div class = "price">
+					
+			<p>$<?php the_field('price');?></p>
+				
+			</div>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -30,8 +36,22 @@ get_header(); ?>
 				endif;
 			?>
 
-
 		<?php endwhile; // End of the loop. ?>
+
+		<div class= "social-links">
+			<button type="button" class="social-button">
+				<i class="fab fa-facebook">Like</i>
+			</button> 
+
+			<button type="button" class="social-button">
+				<i class="fab fa-twitter">Tweet</i>
+			</button> 
+
+			<button type="button" class="social-button">
+				<i class="fab fa-pinterest">Pin</i>
+			</button> 
+
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
