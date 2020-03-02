@@ -4,18 +4,22 @@
     width: 50px;
   }
 
-  p{
-   font-size: 16px;
+  p {
+    font-size: 16px;
+    text-align: center;
   }
 }
 
 //Styling for Do Category Box
 .do {
   flex: 1;
+  margin-right: 16px;
   margin-top: 16px;
   border: 1px solid #e1e1e1;
-  &:hover{
+  border-top: 5px solid #e1e1e1;
+  &:hover {
     border: 1px solid $color_orange-brand-color;
+    border-top: 5px solid $color_orange-brand-color;
   }
 }
 
@@ -26,10 +30,13 @@
 //Styling for Eat Category Box
 .eat {
   flex: 1;
+  margin-right: 16px;
   margin-top: 16px;
   border: 1px solid #e1e1e1;
-  &:hover{
+  border-top: 5px solid #e1e1e1;
+  &:hover {
     border: 1px solid $color_orange-brand-color;
+    border-top: 5px solid $color_orange-brand-color;
   }
 }
 
@@ -41,10 +48,13 @@
 
 .sleep {
   flex: 1;
+  margin-right: 16px;
   margin-top: 16px;
   border: 1px solid #e1e1e1;
-  &:hover{
+  border-top: 5px solid #e1e1e1;
+  &:hover {
     border: 1px solid $color_orange-brand-color;
+    border-top: 5px solid $color_orange-brand-color;
   }
 }
 
@@ -58,8 +68,10 @@
   flex: 1;
   margin-top: 16px;
   border: 1px solid #e1e1e1;
-  &:hover{
+  border-top: 5px solid #e1e1e1;
+  &:hover {
     border: 1px solid $color_orange-brand-color;
+    border-top: 5px solid $color_orange-brand-color;
   }
 }
 
@@ -80,9 +92,18 @@ read-more-btn {
   }
 }
 
+.category-more-button{
+  border: 1px solid $color_green-brand-color;
+  background-color: $color_green-brand-color;
+}
+
+
+
+categor
+
 h2 {
   color: $color_green-brand-color;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .journal-title {

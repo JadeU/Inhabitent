@@ -15,10 +15,16 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+				<p class= "page-title">SHOP STUFF</p>
+		
+		<ul class="product-category-nav">
+
+			<li><a href="">DO</a></li>
+			<li><a href="">EAT</a></li>
+			<li><a href="">SLEEP</a></li>
+			<li><a href="">WEAR</a></li>
+		</ul>
+
 
 	  <h2>
 		
@@ -30,8 +36,7 @@ get_header(); ?>
 					echo $term->slug.' ';
 					echo '</a>';
 				 
-				}
-
+				 }
 
  			?>
 		</h2>

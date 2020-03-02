@@ -28,7 +28,7 @@ get_header(); ?>
 					</div>
 
 				<div class="do-meta">
-					<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors</p>
+					<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
 				</div>
 			
 				<a class="read-more-btn" href="">Do Stuff</a>
@@ -69,7 +69,7 @@ get_header(); ?>
 					<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
 				</div>
 
-				<a class="read-more-btn" href="http://localhost:3000/Inhabitent/">Sleep Stuff</a>
+				<a class="category-more-btn" href="http://localhost:3000/Inhabitent/">Sleep Stuff</a>
 
 			</div>
 
@@ -86,22 +86,12 @@ get_header(); ?>
 			</div>
 
 				<div class="wear-meta">
-					<p>From flannel shirts to toques, look the part while roughing it in the great outdoors</p>
+					<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
 				</div>
 
 				<a class="read-more-btn" href="http://localhost:3000/Inhabitent/">Wear Stuff</a>
 
 			</div>
-
-
-
-		
-
-
-
-
-
-
 		</div>
 	</section>
 

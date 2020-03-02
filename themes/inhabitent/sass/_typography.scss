@@ -26,13 +26,16 @@ h6 {
 }
 
 h1 {
-  color: black;
+  color: white;
+  border: 1px solid $color_green-brand-color;
+  background-color: $color_green-brand-color;
 }
 
-
-
 h2 {
+
   font-size: 1.3rem;
+  color: $color_orange-brand-color;
+  
 }
 
 // h3{
