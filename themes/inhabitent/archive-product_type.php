@@ -25,7 +25,6 @@ get_header(); ?>
 			<li><a href="">WEAR</a></li>
 		</ul>
 
-
 	  <h2>
 		
 			<?php 

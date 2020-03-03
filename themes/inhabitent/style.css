@@ -83,6 +83,10 @@ template {
 a {
   background-color: transparent; }
 
+.read-more-button {
+  border: 1px solid black;
+  padding: 10px; }
+
 a:active,
 a:hover {
   outline: 0; }
@@ -733,7 +737,9 @@ a
   height: 50px;
   position: fixed;
   z-index: 3;
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.85); }
 
 .header-container {
   width: 1120px;

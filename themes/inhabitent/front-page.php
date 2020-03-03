@@ -21,7 +21,7 @@ get_header(); ?>
 
 					<div class="do-logo"> 
 
-						<a href="http://localhost:3000/Inhabitent/">
+						<a href="">
 								<img src="<?php echo get_template_directory_uri();?>/images/do.svg" alt="Do category logo"  >
 						</a>
 					
@@ -50,7 +50,7 @@ get_header(); ?>
 				<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
 				</div>
 
-				<a class="read-more-btn" href="http://localhost:3000/Inhabitent/">Eat Stuff</a>
+				<a class="read-more-btn" href="">Eat Stuff</a>
 
 			</div>
 
@@ -69,7 +69,7 @@ get_header(); ?>
 					<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
 				</div>
 
-				<a class="category-more-btn" href="http://localhost:3000/Inhabitent/">Sleep Stuff</a>
+				<a class="category-more-btn" href="">Sleep Stuff</a>
 
 			</div>
 
@@ -89,7 +89,7 @@ get_header(); ?>
 					<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
 				</div>
 
-				<a class="read-more-btn" href="http://localhost:3000/Inhabitent/">Wear Stuff</a>
+				<a class="read-more-btn" href="">Wear Stuff</a>
 
 			</div>
 		</div>
