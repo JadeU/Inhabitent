@@ -1,140 +1,123 @@
-.product-categories-container {
-  display: flex;
-  img {
-    width: 50px;
+.page-front-page {
+  .banner-logo {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
   }
 
-  p {
-    font-size: 16px;
+  .inhabitent-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .product-categories-container {
+    display: flex;
+    img {
+      width: 50px;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  .product-category-box {
+    flex: 1;
+    margin-right: 16px;
+    margin-top: 16px;
+    border: 1px solid #e1e1e1;
+    border-top: 5px solid #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+
+    &:hover {
+      border: 1px solid $color_orange-brand-color;
+      border-top: 5px solid $color_orange-brand-color;
+    }
   }
-}
 
-//Styling for Do Category Box
-.do {
-  flex: 1;
-  margin-right: 16px;
-  margin-top: 16px;
-  border: 1px solid #e1e1e1;
-  border-top: 5px solid #e1e1e1;
-  &:hover {
-    border: 1px solid $color_orange-brand-color;
-    border-top: 5px solid $color_orange-brand-color;
+  .product-category-logo {
+    width: 100%;
+    margin: 15px;
   }
-}
 
-.do-logo {
-  width: 100%;
-}
+  .category-more-btn {
+    margin: 10px;
+    background-color: $color_green-brand-color;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
 
-//Styling for Eat Category Box
-.eat {
-  flex: 1;
-  margin-right: 16px;
-  margin-top: 16px;
-  border: 1px solid #e1e1e1;
-  border-top: 5px solid #e1e1e1;
-  &:hover {
-    border: 1px solid $color_orange-brand-color;
-    border-top: 5px solid $color_orange-brand-color;
+    &:hover {
+      background-color: #19625d;
+      color: white;
+    }
+    &:visited {
+      color: white;
+    }
   }
-}
 
-.eat-logo {
-  width: 100%;
-}
+  //Journal Feature Styling
 
-//Styling for Sleep Category Box
-
-.sleep {
-  flex: 1;
-  margin-right: 16px;
-  margin-top: 16px;
-  border: 1px solid #e1e1e1;
-  border-top: 5px solid #e1e1e1;
-  &:hover {
-    border: 1px solid $color_orange-brand-color;
-    border-top: 5px solid $color_orange-brand-color;
+  .read-more-btn {
+    border: 1px solid #000;
+    color: #000;
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    &:hover {
+      background-color: $color_green-brand-color;
+    }
   }
-}
 
-.sleep-logo {
-  width: 100%;
-}
-
-//Styling for Wear Category Box
-
-.wear {
-  flex: 1;
-  margin-top: 16px;
-  border: 1px solid #e1e1e1;
-  border-top: 5px solid #e1e1e1;
-  &:hover {
-    border: 1px solid $color_orange-brand-color;
-    border-top: 5px solid $color_orange-brand-color;
-  }
-}
-
-.wear-logo {
-  width: 100%;
-}
-
-//Journal Feature Styling
-
-read-more-btn {
-  border: 1px solid #000;
-  color: #000;
-  position: absolute;
-  bottom: 0.75rem;
-  left: 0.75rem;
-  &:hover {
+  .category-more-button {
+    border: 1px solid $color_green-brand-color;
     background-color: $color_green-brand-color;
   }
-}
 
-.category-more-button{
-  border: 1px solid $color_green-brand-color;
-  background-color: $color_green-brand-color;
-}
-
-
-
-categor
-
-h2 {
-  color: $color_green-brand-color;
-  font-size: 20px;
-}
-
-.journal-title {
-  font-size: 36px;
-  color: $font_base-color;
-}
-
-.feature-container {
-  display: flex;
-}
-
-.journal-container {
-  flex: 1;
-  margin-right: 16px;
-
-  &:last-child {
-    margin-right: 0;
+  .category h2 {
+    color: $color_green-brand-color;
+    font-size: 20px;
   }
-}
 
-.journal-background {
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  .journal-title {
+    font-size: 36px;
+    color: $font_base-color;
+  }
 
-.journal-meta {
-  border: 1px solid #e1e1e1;
-  border-top-width: 8px;
-  min-height: 250px;
-  padding: 16px;
+  .feature-container {
+    display: flex;
+  }
+
+  .journal-container {
+    flex: 1;
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .journal-background {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .journal-meta {
+    border: 1px solid #e1e1e1;
+    border-top-width: 8px;
+    min-height: 250px;
+    padding: 16px;
+    position: relative;
+  }
 }

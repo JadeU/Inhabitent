@@ -4,4 +4,48 @@
 
 /* Front page */
 
+.blog {
+  .entry-header {
+    position: relative;
+  }
+  .wp-post-image {
+    width: 100%;
+    display: block;
+  }
 
+  .entry-title {
+    position: absolute;
+    background-color: $color_green-brand-color;
+    top: 20px;
+    transform: translate(0, 0);
+    max-width: 80%;
+
+    a {
+      color: white;
+      font-size: 36px;
+      padding: 16px;
+    }
+  }
+  .entry-meta {
+    position: absolute;
+    background-color: $color_green-brand-color;
+    bottom: 0;
+    right: 0;
+    color: white;
+    min-width: 400px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  .read-more-btn {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    &:hover {
+      background-color: $color_green-brand-color;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying products archives.
+ * The template for displaying filtered product archives.
  *
  * @package Inhabitent_Theme
  */
@@ -15,33 +15,10 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<p class= "page-title">SHOP STUFF</p>
+				<p class= "page-title"><?php single_term_title() ?></p>
+				<p class="page-description"> <?php  echo term_description()?></p>
+		
 	
-
-				<?php 
-				
-				$product_taxonomy = array ( 
-					'taxonomy' => 'product_taxonomy',
-					'hide_empty' => true,
-				);
-
-				$product_terms = get_terms($product_taxonomy);
-	
-				?>
-
-				<ul class="product-category-nav">		
-					<?php 
-						foreach($product_terms as $product_term) :
-					?>
-						<li> 
-							<a href="<?php echo get_term_link($product_term)?>">
-								<?php echo $product_term -> name ?> 
-							</a>
-						</li>
-
-					<?php endforeach ?>
-					<?php wp_reset_postdata(); ?>
-				</ul>
 	  <h2>
 		
 			<?php 

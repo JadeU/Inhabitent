@@ -5,94 +5,69 @@
  * @package Inhabitent_Theme
  */
 
-get_header(); ?>
+get_header('front-page'); ?>
 
-
+		
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-	
 		<section class="shop-stuff-container"> 
 			<h2 class= "shop-title">SHOP STUFF</h2>
 
-			 <div class="product-categories-container">
+			<?php 
+			
+			$product_taxonomy = array ( 
+				'taxonomy' => 'product_taxonomy',
+				'hide_empty' => true,
+			);
 
-				<div class="do"> 
+			$terms = get_terms($product_taxonomy);
 
-					<div class="do-logo"> 
+			?>
 
-						<a href="">
-								<img src="<?php echo get_template_directory_uri();?>/images/do.svg" alt="Do category logo"  >
-						</a>
+			
+
+			<div class="product-categories-container">
+			
+			<?php 
+				foreach( $terms as $term ) :
+					$name = $term-> name;
+					$description = $term-> description;
+					$slug = $term -> slug; 
+					$taxonomy_id = $term -> term_id; 
+
+					$img_path = get_template_directory_uri(). '/images/' . $slug . '.svg';
 					
+			?>
+
+				<div class="product-category-box">
+					<div class ="product-category-logo">
+						<a href="<?php echo get_term_link($taxonomy_id)?>">
+							<img class="product-category-logo" src="<?php echo $img_path ?>"
+							alt="<?php echo $name ?> category logo">
+						</a>
 					</div>
 
-				<div class="do-meta">
-					<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+					
+					<div class="product-category-meta">
+						<?php echo $description ?>
+					</div>
+					
+					<a class= "category-more-btn" href= "<?php echo get_term_link($taxonomy_id)?>">
+						<?php echo $name ?>	Stuff
+				</a>
+					
+	
 				</div>
-			
-				<a class="read-more-btn" href="">Do Stuff</a>
 				
-			</div>
+			<?php endforeach ?>
 
-
-			<div class="eat"> 
-
-				<div class="eat-logo"> 
-
-					<a href="">
-							<img src="<?php echo get_template_directory_uri();?>/images/eat.svg"   alt="Eat category logo">
-					</a>
-
-				</div>
-
-				<div class="eat-meta">
-				<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-				</div>
-
-				<a class="read-more-btn" href="">Eat Stuff</a>
-
-			</div>
 
 		
-			<div class="sleep"> 
 
-				<div class="sleep-logo"> 
 
-					<a href="">
-							<img src="<?php echo get_template_directory_uri();?>/images/sleep.svg"   alt="Sleep category logo">
-					</a>
-
+				
 			</div>
-
-				<div class="sleep-meta">
-					<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-				</div>
-
-				<a class="category-more-btn" href="">Sleep Stuff</a>
-
-			</div>
-
-
-
-			<div class="wear"> 
-
-				<div class="wear-logo"> 
-
-					<a href="">
-							<img src="<?php echo get_template_directory_uri();?>/images/wear.svg"   alt="Sleep category logo">
-					</a>
-
-			</div>
-
-				<div class="wear-meta">
-					<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-				</div>
-
-				<a class="read-more-btn" href="">Wear Stuff</a>
-
-			</div>
-		</div>
 	</section>
 
 
@@ -108,9 +83,16 @@ get_header(); ?>
 					);
    				$featured_posts = get_posts( $args ); 
 			?>
-			<?php foreach ( $featured_posts as $post ) : setup_postdata( $post ); ?>
+			<?php foreach ( $featured_posts as $post ) : 
+				
+				setup_postdata( $post ); 
+				
+				$post_id = $post -> ID;
 
-	
+
+				?>
+
+				
 			<div class="journal-container"> 
 
 				<div class="journal-background" style="background-image: url('<?php echo get_the_post_thumbnail_url();?>')"></div>
@@ -120,7 +102,7 @@ get_header(); ?>
 
 				<h2> <?php the_title();?></h2>
 					 
-				<a class="read-more-btn" href="">Read Entry</a>
+				<a class="read-more-btn" href="<?php echo get_post_permalink($post_id)?>">Read Entry</a>
 
 				</div>
 			</div>

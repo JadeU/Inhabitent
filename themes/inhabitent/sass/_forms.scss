@@ -14,11 +14,10 @@ input[type='submit'] {
   border: 1px solid black;
   background-color: transparent;
 
-  &:hover{
+  &:hover {
     background-color: $color_green-brand-color;
   }
 }
-
 
 /* Fields */
 
@@ -51,4 +50,16 @@ textarea {
 
 .search-field {
   border: none;
+}
+
+.contact-form-label {
+  color: #111;
+  font-size: 24px;
+  font-family: 'Novecento Sans Web';
+
+  input,
+  textarea {
+    border: 1px solid #e1e1e1;
+    background-color: #f4f4f4;
+  }
 }
