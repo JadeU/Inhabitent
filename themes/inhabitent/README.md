@@ -1,21 +1,35 @@
-# RED Starter
+# Inhabitent
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+## Project Brief
 
-## Installation
+A multi-page website with blog style journal posts and a shop section, for a camping supply company called Inhabitent Camping Supply Co.
 
-### 1. Download me (don't clone me!)
+## Coded by:
 
-Then add me to your `wp-content` directory.
+Jade Underwood
 
-### 2. Rename the `redstarter-master` directory
+## Project Goals
 
-Make sure that the theme directory name is project appropriate!
+The goals for this project:
 
-### 3. Install the dev dependencies
+- utilize WordPress as a content management system for displaying pages and post.
+- create a custom theme using the RED Started theme as a base
+- use WP content heirarchy knowledge to create the necessary custom page templates
+- use custom fields and taxonomies for additional metadata
+- create a custom widget for the sidebar/footer
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+### Tech used
 
-### 4. Update the proxy in `gulpfile.js`
+- WordPress
+- FlexBox
+- git
+- gulp
+- JavaScript
+- Sass
+- jQuery
+- HTML
+- CSS
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+### Personal Learnings
+
+Truthfully, with such a heavy workload in a short amount of time, Inhabitent really pushed my to develop a more effiecient work flow. It was a lot to accomplish, so I quickly learned the value of spotting common/repetitive patterns in pages, templates, etc. I think it was a valuable lesson in understanding WP template heirarchy better, and how to build a site with the end client in mind.
