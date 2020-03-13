@@ -4,12 +4,26 @@
 
 /* Posts and pages */
 
-
 .site-content {
   display: flex;
   flex-direction: row;
   max-width: $site-width;
   margin: 0 auto;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 3rem;
+}
+
+.product-info-container {
+  order: 2;
+}
+
+.product-image-wrapper {
+  order: 1;
 }
 
 .content-area {

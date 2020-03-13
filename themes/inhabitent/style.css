@@ -688,6 +688,22 @@ a
   max-width: 1120px;
   margin: 0 auto; }
 
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 3rem; }
+
+.product-info-container {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.product-image-wrapper {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
 .content-area {
   -webkit-box-flex: 2;
       -ms-flex: 2;
